@@ -1,0 +1,11 @@
+name: Meu Workflow
+on: workflow_dispatch
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Saudação
+        run: echo "Olá Mundo!"
+      - name: Print Adeus
+        run: echo "Feito - tchau!"
+        
