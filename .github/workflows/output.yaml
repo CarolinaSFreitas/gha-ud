@@ -1,0 +1,9 @@
+name: Output information
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub Context
+        run: echo "The event name is ${{ toJSON(github) }}."        #isso é uma expressão que seá avaliada e substituída pelo valor correspondente em JSON(function) e ñ texto
+
